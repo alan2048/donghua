@@ -1,0 +1,189 @@
+body{
+	position: relative;
+}
+#header-fixed a.a-msg{
+	display: inline-block;
+	width: 200px;
+	height: 190px;
+	background: url(../images/message.png) no-repeat center center;
+}
+#header-fixed a.a-msg:hover{
+	background: url(../images/message-h.png) no-repeat center center;
+}
+#header-fixed a.a-bigData{
+	display: inline-block;
+	width: 200px;
+	height: 190px;
+	background: url(../images/bigData.png) no-repeat center center;
+}
+#header-fixed a.a-bigData:hover{
+	background: url(../images/bigData-h.png) no-repeat center center;
+}
+#header-fixed a.a-map{
+	display: inline-block;
+	width: 200px;
+	height: 190px;
+	background: url(../images/map.png) no-repeat center center;
+}
+#header-fixed a.a-map:hover{
+	background: url(../images/map-h.png) no-repeat center center;
+}
+#login {
+	position: fixed;
+	z-index: 9001;
+	width: 480px;
+	height: 440px;
+	top: 25%;
+	left: 36%;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 50px 45px 75px 45px;
+	display: none;
+}
+#login .header{
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 44px;
+}
+#login .user input,#login .password input{
+	border: 1px solid #e6e6e6;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding: 16px 22px;
+	color: #000;
+	width: 100%;
+}
+#login .user input{
+	margin-bottom: 10px;
+}
+#login .password input{
+	margin-bottom: 20px;
+}
+#login .remember {
+	margin-bottom: 25px;
+	font-size: 15px;
+	color: #a3a3a3;
+}
+#login .remember input{
+	margin-right: 10px;
+}
+#login .login{
+	width: 100%;
+	height: 40px;
+	background-color: #4d8ccb;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 24px;
+	line-height: 40px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+#login .login:hover{
+	background-color: #8f992a;
+}
+#login .forgive a{
+	color: #a3a3a3;
+}
+#login span.closeBtn {
+	background: url(../images/closeBtn.png) no-repeat center center;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	width: 24px;
+	height: 24px;
+	box-shadow: 0 0 1px #ccc;
+	border-radius: 22px;
+	cursor: pointer;
+}
+.window-mask {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	filter: alpha(opacity=40);
+	opacity: 0.40;
+	font-size: 1px;
+	overflow: hidden;
+}
+.window-proxy-mask, .window-mask {
+	background: rgba(0,0,0,1);
+}
+.window-mask {
+	display: none;
+	z-index: 9000;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.elevator {
+	position: fixed;
+	padding: 0 15px;
+	bottom: 80px;
+	right: 45px;
+	z-index: 1000;
+	background-color: transparent;
+	display: none;
+}
+.elevator > a {
+	display: block;
+	width: 86px;
+	height: 100px;
+	border-radius: 100px;
+	padding: 12px 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #787d82;
+	text-align: center;
+	outline-style: none; 
+}
+.elevator > a:last-of-type{
+	margin-bottom: 40px;
+}
+.elevator > div > a {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	padding: 12px 0;
+	font-size: 12px;
+	line-height: 20px;
+	color: #787d82;
+	text-align: center;
+	outline-style: none; 
+}
+.elevator a:hover,.elevator a:focus{
+	outline-style: none;
+}
+.elevator .elevator-msg{
+	background: url(../images/siderbigMsg.png) no-repeat center center;
+}
+.elevator .elevator-msg:hover{
+	background: url(../images/siderbigMsg-h.png) no-repeat center center;
+}
+.elevator .elevator-bigData{
+	background: url(../images/siderbigdata.png) no-repeat center center;
+}
+.elevator .elevator-bigData:hover{
+	background: url(../images/siderbigdata-h.png) no-repeat center center;
+}
+.elevator .elevator-map{
+	background: url(../images/sidertidu.png) no-repeat center center;
+}
+.elevator .elevator-map:hover{
+	background: url(../images/sidertidu-h.png) no-repeat center center;
+}
+.elevator .elevator-top{
+	background: url(../images/toTop.png) no-repeat center center;
+}
+.elevator .elevator-link{
+	background: url(../images/toLink.png) no-repeat center center;
+}
+/*.elevator .elevator-link:hover{
+	background: url(../images/link-hover.png) no-repeat center center;
+}*/

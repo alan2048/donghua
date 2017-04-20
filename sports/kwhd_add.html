@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- start: Meta -->
+	<meta charset="utf-8" />
+	<title>SimpliQ - Flat & Responsive Bootstrap Admin Template</title>
+	<meta name="description" content="SimpliQ - Flat & Responsive Bootstrap Admin Template." />
+	<meta name="author" content="Łukasz Holeczek" />
+	<meta name="keyword" content="SimpliQ, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina" />
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="css/style.min.css" rel="stylesheet" />
+	<link href="css/style-responsive.min.css" rel="stylesheet" />
+	<link href="css/retina.css" rel="stylesheet" />
+	<!-- end: CSS -->
+	
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<link id="ie-style" href="css/ie.css" rel="stylesheet">
+	<![endif]-->
+	
+	<!--[if IE 9]>
+		<link id="ie9style" href="css/ie9.css" rel="stylesheet">
+	<![endif]-->
+	
+	<!-- start: Favicon and Touch Icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png" />
+	<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png" />
+	<link rel="shortcut icon" href="ico/favicon.png" />
+	<!-- end: Favicon and Touch Icons -->	
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+    <!-- start: navigation  -->
+    <link href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="js/screen.css" rel="stylesheet" />
+    <!-- end: navigation  -->
+
+</head>
+
+<body>
+	<!-- start header -->
+    <header class="main-header" style="background:#0CF">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" style="font-size:48px; color:#fff;">体育部</div>
+          </div>
+        </div>
+    </header>
+    <!-- end header -->
+    
+    <!-- start navigation -->
+    <nav class="main-navigation">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="navbar-header">
+                        <span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu">
+                        <span class="sr-only">&nbsp;</span>
+                        <i class="fa fa-bars"></i>                        </span>                    </div>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="menu">
+		 <li role="presentation"><a href="cdgl.html">场地管理</a></li>
+        <li role="presentation"><a href="cdyy.html">场地预约</a></li>
+		<li role="presentation"><a href="stgl.html">社团管理</a></li>
+		<li class="nav-current" role="presentation"><a href="kwhd.html">课外活动管理</a></li>
+        <li role="presentation"><a href="jlxf.html">奖励学分管理</a></li>
+        <li role="presentation"><a href="tycj.html">体育成绩管理</a></li>
+					</ul>   
+                    </div>
+                </div>
+          </div>
+        </div>
+    </nav>
+    <!-- end navigation -->
+    
+    <!-- start: Content -->
+    <div id="content" style="min-height: 678px; ">
+			
+			<div class="row-fluid">	
+				<div class="box span12">
+					<div class="box-header">
+						<h2 style="font-size:16px; color:#fff; font-weight:600;"><i class="icon-inbox"></i>课外活动管理</h2>
+					</div>
+					<div class="box-content">
+						<ul class="nav tab-menu nav-tabs" id="myTab">
+							<li class="active"><a href="kwhd.html">返回</a></li>
+						</ul>
+                    <div class="row-fluid" style="margin-top:70px; margin-left:25px;">
+  <div class="span12">
+    <div id="DataTables_Table_0_length" class="dataTables_length">
+      <label class="pull-left" style="margin-right:10px">关键字搜索
+        <select size="1" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0">
+          <option value="10" selected="selected">活动名称</option>
+          <option value="25">指导老师</option>
+        </select>
+      </label>
+       <label class="pull-left" style="margin-right:10px">
+        <input type="text" aria-controls="DataTables_Table_0" value="本分类下搜索" style="padding:5px 7px">
+      </label>
+      <label class="pull-left" style="margin-right:10px">
+        <button class="btn btn-primary"><i class="icon-search"></i></button>
+      </label>
+    </div>
+  </div>
+  
+</div>
+
+<div class="buttons">
+<p>
+<!--
+<button class="btn btn-small">全选</button>
+<button class="btn btn-small">反选</button>-->
+<button class="btn btn-small">新建</button>
+<!--
+<button class="btn btn-small">勾选预览</button>
+<button class="btn btn-small">全部预览</button>
+<button class="btn btn-small">区域管理</button>
+-->
+</p>
+</div>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr role="row">
+      <th>序号</th>
+      <th>活动名称</th>
+      <th>地点</th>
+      <th>活动日期</th>
+      <th>承办单位</th>
+      <th>申请增加次数</th>
+	  <th>申请人</th>
+      <th>联系方式</th>
+	  <th>学生名单</th>
+      <th>指导老师</th>
+	  <th>联系方式</th>
+      <th>状态</th>	 
+      <th>操作</th>
+    </tr>
+  </thead>
+  <tbody role="alert" aria-live="polite" aria-relevant="all">
+		<tr class="odd">
+				  <td class="center">1</td>
+				  <td class="center">阳光大联赛</td>
+				  <td class="center">松江校区</td>
+				  <td class="center">2016.12.20</td>
+				  <td class="center">东华大学</td>
+				  <td class="center">2</td>
+				  <td class="center">王玉</td>
+				  <td class="center">1500212541</td>
+				  <td class="center"><a href="#">查看</a></td>
+				  <td class="center">张三</td>
+				  <td class="center">15985456521</td>
+				  <td class="center">待审核</td>
+				  <td class="center "><a class="btn btn-warning" href="#" title="审核"> <i class="icon-fire "></i> </a> <a class="btn btn-success" href="#" title="查看"> <i class="icon-zoom-in "></i> </a> <a class="btn btn-info btn-setting" href="#" title="编辑"> <i class="icon-edit "></i> </a> <a class="btn btn-danger" href="#" title="删除"> <i class="icon-trash "></i> </a></td>
+		</tr>
+		<tr class="even">
+				  <td class="center">2</td>
+				  <td class="center">阳光大联赛</td>
+				  <td class="center">松江校区</td>
+				  <td class="center">2016.12.20</td>
+				  <td class="center">东华大学</td>
+				  <td class="center">2</td>
+				  <td class="center">王玉</td>
+				  <td class="center">1500212541</td>
+				  <td class="center"><a href="#">查看</a></td>
+				  <td class="center">张三</td>
+				  <td class="center">15985456521</td>
+				  <td class="center">待审核</td>
+				  <td class="center "><a class="btn btn-warning" href="#" title="审核"> <i class="icon-fire "></i> </a> <a class="btn btn-success" href="#" title="查看"> <i class="icon-zoom-in "></i> </a> <a class="btn btn-info btn-setting" href="#" title="编辑"> <i class="icon-edit "></i> </a> <a class="btn btn-danger" href="#" title="删除"> <i class="icon-trash "></i> </a></td>
+		</tr>
+
+		
+  </tbody>
+</table>
+                            <div class="pagination pagination-centered">
+						  <ul>
+							<li><a href="#">Prev</a></li>
+							<li class="active">
+							  <a href="#">1</a>
+							</li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">Next</a></li>
+						  </ul>
+						</div>
+                         
+					</div>
+				</div><!--/span-->
+			</div><!--/row-->		
+			</div>
+    <!-- end: Content -->
+    
+    <!-- start: modal -->
+    <div class="modal hide fade" id="myModal">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+				<h5>编辑</h5>
+			</div>
+			<div class="modal-body">
+<table class="table table-bordered">
+  <thead>
+    <tr role="row">
+      <th colspan="4" style="text-align:center; font-size:16px; font-weight:600; background:#ebedf2;">场地管理</th>
+    </tr>
+  </thead>
+  <tbody role="alert" aria-live="polite" aria-relevant="all">
+    <tr>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">校区</td>
+      <td class="center">
+      <label>
+        <select size="1" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" style="width:auto; margin-bottom:0px;">
+          <option value="10" selected="selected">松江校区</option>
+          <option value="25">延安路校区</option>
+        </select>
+      </label>
+      </td>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">场地编号</td>
+      <td class="center"><label><input class="input-xlarge focused" id="focusedInput" type="text" value="" style="width:auto; padding:5px; margin-bottom:0px;"></label></td>
+    </tr>
+    <tr>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">场地名称</td>
+      <td class="center"><label><input class="input-xlarge focused" id="focusedInput" type="text" value="" style="width:auto; padding:5px; margin-bottom:0px;"></label></td>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">类型</td>
+      <td class="center">
+      <label>
+        <select size="1" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" style="width:auto; margin-bottom:0px;">
+          <option value="10" selected="selected">足球场</option>
+          <option value="25">篮球场</option>
+        </select>
+      </label>
+      </td>
+    </tr>
+    <tr>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">场地位置</td>
+      <td class="center"><label><input class="input-xlarge focused" id="focusedInput" type="text" value="" style="width:auto; padding:5px; margin-bottom:0px;"></label></td>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">容纳人数</td>
+      <td class="center"><label><input class="input-xlarge focused" id="focusedInput" type="text" value="" style="width:auto; padding:5px; margin-bottom:0px;"></label></td>
+    </tr>
+    <tr>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">状态</td>
+      <td colspan="3" class="center">
+      <label>
+        <select size="1" name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" style="width:auto; margin-bottom:0px;">
+          <option value="10" selected="selected">正常</option>
+          <option value="25">关闭</option>
+        </select>
+      </label>
+      </td>
+    </tr>
+    <tr>
+      <td class="center" style="background:#f8f8f8; font-weight:600;">场地说明</td>
+      <td colspan="3" class="center"><label><textarea rows="7" class="input-xlarge focused" id="focusedInput" value="" style="width:96%; padding:5px; margin-bottom:0px;"></textarea></label></td>
+    </tr>
+  </tbody>
+</table>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn" data-dismiss="modal">关闭</a>
+				<a href="#" class="btn btn-primary">保存</a>
+			</div>
+		</div>
+    <!-- end: modal -->
+    
+    
+	<!-- start: JavaScript-->
+		<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>	
+		<script src="js/jquery-ui-1.10.3.custom.min.js"></script>	
+		<script src="js/jquery.ui.touch-punch.js"></script>	
+		<script src="js/modernizr.js"></script>	
+		<script src="js/bootstrap.min.js"></script>	
+		<script src="js/jquery.cookie.js"></script>	
+		<script src='js/fullcalendar.min.js'></script>	
+		<script src='js/jquery.dataTables.min.js'></script>
+		<script src="js/excanvas.js"></script>
+	<script src="js/jquery.flot.js"></script>
+	<script src="js/jquery.flot.pie.js"></script>
+	<script src="js/jquery.flot.stack.js"></script>
+	<script src="js/jquery.flot.resize.min.js"></script>
+	<script src="js/jquery.flot.time.js"></script>
+		
+		<script src="js/jquery.chosen.min.js"></script>	
+		<script src="js/jquery.uniform.min.js"></script>		
+		<script src="js/jquery.cleditor.min.js"></script>	
+		<script src="js/jquery.noty.js"></script>	
+		<script src="js/jquery.elfinder.min.js"></script>	
+		<script src="js/jquery.raty.min.js"></script>	
+		<script src="js/jquery.iphone.toggle.js"></script>	
+		<script src="js/jquery.uploadify-3.1.min.js"></script>	
+		<script src="js/jquery.gritter.min.js"></script>	
+		<script src="js/jquery.imagesloaded.js"></script>	
+		<script src="js/jquery.masonry.min.js"></script>	
+		<script src="js/jquery.knob.modified.js"></script>	
+		<script src="js/jquery.sparkline.min.js"></script>	
+		<script src="js/counter.min.js"></script>	
+		<script src="js/raphael.2.1.0.min.js"></script>
+	<script src="js/justgage.1.0.1.min.js"></script>	
+		<script src="js/jquery.autosize.min.js"></script>	
+		<script src="js/retina.js"></script>
+		<script src="js/jquery.placeholder.min.js"></script>
+		<script src="js/wizard.min.js"></script>
+		<script src="js/core.min.js"></script>	
+		<script src="js/charts.min.js"></script>	
+		<script src="js/custom.min.js"></script>
+	<!-- end: JavaScript-->
+	
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</html>

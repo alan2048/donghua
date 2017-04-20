@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="实验室及大型仪器设备共享平台">
+
+    <title>东华大学实验室及大型仪器设备共享平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+	
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">东华大学实验室</a> -->
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll loginBtn" href="javascript:void(0);">登录</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">
+                        	<input type="text" name="" placeholder="仪器检索">
+                        	<span><img src="images/search.png"></span>
+                        </a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#reservation">在线预约</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#message">个人中心</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#files">文件下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<header>
+    	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  	<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			    <div class="item active">
+			    	<img src="images/bg-1.png" alt="First slide">
+			    </div>
+			    <div class="item">
+			    	<img src="images/bg-2.png" alt="Second slide">
+			    </div>
+			    <div class="item">
+			    	<img src="images/bg-3.png" alt="Third slide">
+			    </div>
+			</div>
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    	<span class="glyphicon-left"></span>
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    	<span class="glyphicon-right"></span>
+			</a>
+		</div>
+		<div id="logo">
+			<div class="col-lg-12 logo">
+				<span><img src="images/logo.png"></span><br>
+				<span>实验室及大型仪器设备共享平台</span>
+			</div>
+		</div>
+		<div id="header-fixed">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="intro-text">
+							<div class="intro-heading"><span>平台介绍</span></div>
+							<div class="intro-lead-in">可视化服务，集成校园GIS系统的实验室管理、大型仪器设备、高性能计算及远程桌面资源服务平台。</div>
+						</div>
+					</div>
+					<div class="col-lg-4"><a class="btn btn-1 btn-sm a-msg" href="messages.html"></a></div>
+					<div class="col-lg-4"><a class="btn btn-1 btn-sm a-bigData" href="bigData.html"></a></div>
+					<div class="col-lg-4"><a class="btn btn-1 btn-sm a-map" href="map.html"></a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="page-content" class="index-page">
+		<section id="message" class="box-content box-2 box-style" style="height:1120px;background-color:#fff;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>新闻信息</h3>
+						<p>致力于培养基础宽厚、实践能力强、具有创新精神和社会责任感的高素质人才。</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8">
+							<ul id="myTab" class="nav nav-tabs">
+    							<li class="active">
+        							<a href="#news" data-toggle="tab"><img src="images/yaowen.png">要闻</a>
+    							</li>
+    							<li><a href="#Atlas" data-toggle="tab"><img src="images/tuji.png">图集</a></li>
+							</ul>
+							<div id="myTabContent" class="tab-content">
+    							<div class="tab-pane fade in active" id="news">
+        							<div id="carousel01" class="carousel slide" data-ride="carousel">
+										<div class="carousel-inner">
+			    							<div class="item active">
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-01.png"></div>
+			    									<p>2016年10月11日与10月20日，我校原创大师剧《钱宝钧》两次在松江校区锦绣会堂上演。本轮演出工作全部由服装学院师生承担，演员均为我校戏剧影视表演专业2014级“95后”学生。</p>
+			    									<a href="information.html">更多→</a>
+			    								</div>
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-02.png"></div>
+			    									<p>9月27日，主题为“绣开新境”的我校首期《传统刺绣创意设计》非遗传承人群培训班在延安路校区汇报展演。副校长刘春红、文化部非遗司办公室副主任杨晓辉出席。</p>
+			    									<a href="information.html">更多→</a>
+			    								</div>
+			   							 	</div>
+			    							<div class="item">
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-02.png"></div>
+			    									<p>2016年10月11日与10月20日，我校原创大师剧《钱宝钧》两次在松江校区锦绣会堂上演。本轮演出工作全部由服装学院师生承担，演员均为我校戏剧影视表演专业2014级“95后”学生。</p>
+			    									<a href="information.html">更多→</a>
+			    								</div>
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-01.png"></div>
+			    									<p>9月27日，主题为“绣开新境”的我校首期《传统刺绣创意设计》非遗传承人群培训班在延安路校区汇报展演。副校长刘春红、文化部非遗司办公室副主任杨晓辉出席。</p>
+			    									<a href="information.html">更多→</a>
+			    								</div>
+			    							</div>
+			    							<div class="item">
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-01.png"></div>
+			    									<p>2016年10月11日与10月20日，我校原创大师剧《钱宝钧》两次在松江校区锦绣会堂上演。本轮演出工作全部由服装学院师生承担，演员均为我校戏剧影视表演专业2014级“95后”学生。</p>
+			    									<a href="information.html">更多→</a>
+			    								</div>
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-02.png"></div>
+			    									<p>9月27日，主题为“绣开新境”的我校首期《传统刺绣创意设计》非遗传承人群培训班在延安路校区汇报展演。副校长刘春红、文化部非遗司办公室副主任杨晓辉出席。</p>
+			    									<a href="information.html">更多→</a>
+			    								</div>
+			    							</div>
+										</div>
+										<ol class="carousel-indicators">
+			  								<li data-target="#carousel01" data-slide-to="0" class="active"></li>
+			    							<li data-target="#carousel01" data-slide-to="1"></li>
+			    							<li data-target="#carousel01" data-slide-to="2"></li>
+										</ol>
+										<a class="carousel01-left" href="#carousel01" data-slide="prev">
+		    								<span class="">←</span>
+										</a>
+										<a class="carousel02-left" href="#carousel01" data-slide="next">
+		    								<span class="">→</span>
+										</a>
+									</div></div>
+    							<div class="tab-pane fade" id="Atlas">
+        							<div id="carousel02" class="carousel slide" data-ride="carousel">
+										<div class="carousel-inner">
+			    							<div class="item active">
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-01.png"></div>
+			    									<p>2016年10月11日与10月20日，我校原创大师剧《钱宝钧》两次在松江校区锦绣会堂上演。本轮演出工作全部由服装学院师生承担，演员均为我校戏剧影视表演专业2014级“95后”学生。</p>
+			    									<a href="picinfo.html">更多→</a>
+			    								</div>
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-02.png"></div>
+			    									<p>9月27日，主题为“绣开新境”的我校首期《传统刺绣创意设计》非遗传承人群培训班在延安路校区汇报展演。副校长刘春红、文化部非遗司办公室副主任杨晓辉出席。</p>
+			    									<a href="picinfo.html">更多→</a>
+			    								</div>
+			   							 	</div>
+			    							<div class="item">
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-02.png"></div>
+			    									<p>2016年10月11日与10月20日，我校原创大师剧《钱宝钧》两次在松江校区锦绣会堂上演。本轮演出工作全部由服装学院师生承担，演员均为我校戏剧影视表演专业2014级“95后”学生。</p>
+			    									<a href="picinfo.html">更多→</a>
+			    								</div>
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-01.png"></div>
+			    									<p>9月27日，主题为“绣开新境”的我校首期《传统刺绣创意设计》非遗传承人群培训班在延安路校区汇报展演。副校长刘春红、文化部非遗司办公室副主任杨晓辉出席。</p>
+			    									<a href="picinfo.html">更多→</a>
+			    								</div>
+			    							</div>
+			    							<div class="item">
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-01.png"></div>
+			    									<p>2016年10月11日与10月20日，我校原创大师剧《钱宝钧》两次在松江校区锦绣会堂上演。本轮演出工作全部由服装学院师生承担，演员均为我校戏剧影视表演专业2014级“95后”学生。</p>
+			    									<a href="picinfo.html">更多→</a>
+			    								</div>
+			    								<div class="col-md-6">
+			    									<div><img class="img-responsive zoom-img" src="images/new-02.png"></div>
+			    									<p>9月27日，主题为“绣开新境”的我校首期《传统刺绣创意设计》非遗传承人群培训班在延安路校区汇报展演。副校长刘春红、文化部非遗司办公室副主任杨晓辉出席。</p>
+			    									<a href="picinfo.html">更多→</a>
+			    								</div>
+			    							</div>
+										</div>
+										<ol class="carousel-indicators">
+			  								<li data-target="#carousel02" data-slide-to="0" class="active"></li>
+			    							<li data-target="#carousel02" data-slide-to="1"></li>
+			    							<li data-target="#carousel02" data-slide-to="2"></li>
+										</ol>
+										<a class="carousel01-left" href="#carousel02" data-slide="prev">
+		    								<span class="">←</span>
+										</a>
+										<a class="carousel02-left" href="#carousel02" data-slide="next">
+		    								<span class="">→</span>
+										</a>
+									</div></div>
+							</div>
+
+						<div class="row">
+						</div>
+						<div class="row onlineTeach">
+							<div class="col-md-12">
+								<h4><span>在线培训</span></h4>
+							</div>
+							<div class="col-md-3">
+								<a class="replaceUrl" href=":8080/map.html">
+									<img class="img-responsive zoom-img" src="images/online01.png" alt=""/>
+								</a>
+					  		</div>
+					  		<div class="col-md-3">
+								<a class="replaceUrl" href=":82/Home/Index">
+									<img class="img-responsive zoom-img" src="images/online02.png" alt=""/>
+								</a>
+					  		</div>
+					  		<div class="col-md-3">
+								<a class="replaceUrl" href=":82/Home/Index">
+									<img class="img-responsive zoom-img" src="images/online03.png" alt=""/>
+								</a>
+					  		</div>
+					  		<div class="col-md-3">
+								<a class="replaceUrl" href=":82/Home/Index">
+									<img class="img-responsive zoom-img" src="images/online04.png" alt=""/>
+								</a>
+					  		</div>
+					  		<div class="col-md-3">
+								<a class="replaceUrl" href=":82/Home/Index">
+									<img class="img-responsive zoom-img" src="images/online05.png" alt=""/>
+								</a>
+					  		</div>
+					  		<div class="col-md-3">
+								<a href="javascript:viod(0)">
+									<img class="img-responsive zoom-img" src="images/online06.png" alt=""/>
+								</a>
+					  		</div>
+					  		<div class="col-md-3">
+								<a href="javascript:viod(0)">
+									<img class="img-responsive zoom-img" src="images/online07.png" alt=""/>
+								</a>
+					  		</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="row policy">
+							<div class="col-md-12">
+								<span><img src="images/policy.png"></span>
+								<span>政<b>策</b></span>规章
+							</div>
+							<ul>
+								<li>
+									<span><img src="images/date01.png"></span>
+									<span><a href="javascript:void(0);">中华人民共和国国家教育委员会第20号令《高等学校试验室工作规程》</a></span>
+								</li>
+								<li>
+									<span><img src="images/date02.png"></span>
+									<span><a href="javascript:void(0);">东华大学实验室安全管理规定</a></span>
+								</li>
+								<li>
+									<span><img src="images/date03.png"></span>
+									<span><a href="javascript:void(0);">东华大学实验室工作档案管理办法</a></span>
+								</li>
+							</ul>
+							<div class="col-md-12"><a href="policy.html">更多信息<span><img src="images/smallIcon01.png"></span></a></div>
+						</div>
+						<div class="row service">
+							<div class="col-md-12">
+								<div><img src="images/titleIcom01.png"><span>服务评价</span><i></i></div>
+								<p><a href="javascript:void(0);">用户对机组服务人员的服务水平、服务态度、服务内容在线评价、按服务星级进行打分，并对服务提出建议。</a></p>
+							</div>
+							<div class="col-md-12">
+								<div><img src="images/titleIcom02.png"><span>在线服务</span><i></i></div>
+								<p><a href="javascript:void(0);">通过用户咨询版块与仪器设备管理员交流及建议，并进行服务反馈与评价。</a></p>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</section>
+		<section id="reservation" class="box-content box-2 box-style" style="height:590px;background-color:#f2f5fa;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>在线预约</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="poster-main A_Demo">
+						<ul class="poster-list">
+							<li class="poster-item">
+								<div class="yuyueImg"></div>
+								<div class="yuyueText">
+									<h4>仪器预约</h4>
+									<p>系统提供全校大型仪器设备的直接预约和跳转预约功能</p>
+									<a class="replaceUrl" href=":82/Home/Index">立即预约</a>
+								</div>
+							</li>
+							<li class="poster-item current">
+								<div class="yuyueImg"></div>
+								<div class="yuyueText">
+									<h4>实验室预约</h4>
+									<p>实验室和实验项目在线预约，支持现场和在线预约。</p>
+									<a class="replaceUrl" href=":82/Home/Index">立即预约</a>
+								</div>
+							</li>
+							<li class="poster-item">
+								<div class="yuyueImg"></div>
+								<div class="yuyueText">
+									<h4>培训预约</h4>
+									<p>如果需要培训，那么用户可进行培训报名。</p>
+									<a class="replaceUrl" href=":82/Home/Index">立即预约</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>		
+			</div>
+		</section>
+		<section id="bigData" class="box-content box-2 box-style" style="height:663px;background-color:#fff;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 bigDataHeader">
+						<h3>大数据分析</h3>
+						<p>SOA面向服务的体系结构，ESB企业服务总线，分布式存储与并行计算架构(Hadoop+Spark)，ETL数据抽取转换加载，OLAP联机分析处理，Data mining数据挖掘，BI(商业智能)分析集成。</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="bigDataTitle">融合加强，跨部门信息整合，演变成门户化</div>
+						<p class="bigDataContext">全面、稳定、快速、准确的互联网舆情分析系统，融合加强，跨部门信息整合，演变成门户化。</p>
+					</div>
+					<div class="col-md-4">
+						<div class="bigDataTitle">系统更具自由灵活，更易用更人性化</div>
+						<p class="bigDataContext">多年专业数据收集与语义分析技术累计卓越极致，不断攀登。系统更具自由灵活，更易用更人性化。</p>
+					</div>
+					<div class="col-md-4">
+						<div class="bigDataTitle">可扩展并提供客户定制</div>
+						<p class="bigDataContext">为客户提供个性化的分析展现结果，顺应当前时代趋势，可扩展并提供客户定制。</p>
+					</div>
+					<div class="col-md-4">
+						<div class="bigDataTitle">可视化技术呈亮点，交互式分析助推BI</div>
+						<p class="bigDataContext">非凡的数据洞悉和可视化能力精研数据，惊艳所见，可视化技术呈亮点，交互式分析助推BI。</p>
+					</div>
+					<div class="col-md-4">
+						<div class="bigDataTitle">支持展现结果的二次分析，更强的模型支持能力</div>
+						<p class="bigDataContext">提供模型驱动开发，提升数据质量与数据价值，面向服务的数据共享，支持展现结果的二次分析，更强的模型支持能力。</p>
+					</div>
+					<div class="col-md-4">
+						<div class="bigDataTitle">采用大数据架构，面向海量数据分析</div>
+						<p class="bigDataContext">采用大数据处理架构，分布式存储与海量数据实时处理，采用大数据架构，面向海量数据分析。</p>
+					</div>
+				</div>		
+			</div>
+		</section>
+		<section id="signIn" class="box-content box-2 box-style" style="height:253px;background-color:#fff;">
+			<div class="container">
+				<div class="row">
+					<a href="javascript:void(0);" >进入平台</a>
+				</div>		
+			</div>
+		</section>
+		<section id="map" class="box-content box-2 box-style" style="height:820px;background-color:#fff;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 mapHeader">
+						<h3>实验室地图</h3>
+						<p>我们提供整个院系实验室、大型仪器设备的3D地图，您可通过查询了解使用情况或进行预约课程。</p>
+					</div>
+				</div>
+			</div>
+			<div class="map">
+				<img src="images/map01.png">
+			</div>
+		</section>
+<!-- 		<section id="links" class="box-content box-2 box-style" style="height:200px;background-color:#fff;">
+			<div class="container">
+				<div class="row">
+					<div class="nbs-flexisel-container">
+						<div class="nbs-flexisel-inner">
+							<div class="nbs-flexisel-container">
+								<div class="nbs-flexisel-inner">
+									<ul id="flexiselDemo1" class="nbs-flexisel-ul" style="left: -162.857142857143px; display: block;">			
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+										<li class="nbs-flexisel-item" style="width: 162.857142857143px; padding:0 20px;">
+											<div class="sliderfig-grid">
+												<a href="javacript:void(0);"><img src="images/school01.png" alt=" " class="img-responsive"></a>
+											</div>
+										</li>
+									</ul>
+									<div class="nbs-flexisel-nav-left" style="top: -33px;"></div>
+									<div class="nbs-flexisel-nav-right" style="top: -33px;"></div>
+								</div>
+							</div>
+							<div class="nbs-flexisel-nav-left" style="top: 27.5px;"></div>
+							<div class="nbs-flexisel-nav-right" style="top: 27.5px;"></div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</section>  -->  
+	</div>
+
+	<div id="login">
+		<div class="loginContext">
+			<div class="header">账户登录</div>
+			<div class="user">
+				<input type="text" placeholder="用户名" name="">
+			</div>
+			<div class="password">
+				<input type="password" placeholder="密码" name="">
+			</div>
+			<div class="remember">
+				<label><input type="checkbox" name="">记住我</label>
+			</div>
+			<div class="login">登录</div>
+			<div class="forgive"><a href="javascript:void(0);">忘记密码？</a></div>	
+		</div>
+		<span class="closeBtn"></span>
+	</div>
+	<div class="window-mask"></div>
+
+<!-- 	<div id="J_GotoTop" class="elevator">
+    	<a href="#message" class="elevator-msg" title="信息"></a>
+    	<a href="#bigData" class="elevator-bigData" title="大数据"></a>
+    	<a href="#map" class="elevator-map" id="js-elevator-weixin" title="地图"></a>
+    	<div>
+    		<a href="#" class="elevator-top no-goto" title="返回顶部" id="backTop"></a>
+    		<a href="#" class="elevator-link" title="分享链接" id="elevator-link"></a>
+    	</div>
+	</div> -->
+
+	
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-footer footer-1">
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#"><img src="images/logo-big.png" /></a>
+								<p>实验室及大型仪器设备共享平台</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-2">
+						<div class="heading"><h4>新闻中心</h4></div>
+						<div class="content">
+							<p><a href="#">要闻</a></p>
+							<p><a href="#">图集</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-3">
+						<div class="heading"><h4>在线预约</h4></div>
+						<div class="content">
+							<p><a href="#">实验室预约</a></p>
+							<p><a href="#">仪器预约</a></p>
+							<p><a href="#">培训预约</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-4">
+						<div class="heading"><h4>在线培训</h4></div>
+						<div class="content">
+							<p><a href="#">知识地图</a></p>
+							<p><a href="#">微课平台</a></p>
+							<p><a href="#">微课制作</a></p>
+							<p><a href="#">教学互动平台</a></p>
+							<p><a href="#">实验支架</a></p>
+							<p><a href="#">题库与在线测试</a></p>
+							<p><a href="#">成绩册</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-5">
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#">
+									<img src="images/QRcode.png" />
+									<br>
+									<span>平台App下载</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<p>&copy; Copyright 2016 东华大学 - All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/jquery.flexisel.js"></script>	 -->
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+	<!-- <script src="js/PicCarousel.js"></script> -->
+	<script type="text/javascript" src="js/common.js"></script>
+
+</body>
+</html>

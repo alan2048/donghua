@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="实验室及大型仪器设备共享平台">
+
+    <title>东华大学实验室及大型仪器设备共享平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+	
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><span></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            	<ul class="nav navbar-nav navbar-left">
+					<li>
+                        <a class="page-scroll" href="messages.html">信息<i>↓</i></a>
+                        <div class="nav-bg nav-bg-01">
+							<ul>
+								<li><a href="messages.html#message">信息</a></li>
+								<li><a href="messages.html#reservation">预约</a></li>
+								<li><a href="messages.html#onlineTeach">在线培训</a></li>
+							</ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="bigData.html">大数据<i>↓</i></a>
+                        <div class="nav-bg nav-bg-02">
+							<ul>
+								<li><a href="bigData.html#carousel">仪器信息统计</a></li>
+								<li><a href="bigData.html#echart01">仪器使用状态</a></li>
+								<li><a href="bigData.html#echart02">效益分析</a></li>
+								<li><a id="dataPlatform" class="replaceUrl" href=":8280/dataPlatform/loginController.do">大数据应用</a></li>
+							</ul>
+                        </div>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="map.html">地图<i>↓</i></a>
+                        <div class="nav-bg nav-bg-03">
+							<ul>
+								<li><a class="replaceUrl" href=":84/Home/Index">大型仪器共享预约平台</a></li>
+								<li><a class="replaceUrl" href=":83/Home/Index">实验室管理平台</a></li>
+								<li><a href="#" id="mapFloor05">资源地图</a></li>
+								<li><a class="replaceUrl" href=":8080/sports/cdyy.html">体育部</a></li>
+							</ul>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll loginBtn" href="javascript:void(0);">登录</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">
+                        	<input type="text" name="" placeholder="仪器检索">
+                        	<span><img src="images/search.png"></span>
+                        </a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#user">个人中心</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#files">文件下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+	<div id="page-content" class="index-page">
+		<section id="map01">
+			<div class="mapInput">
+				<div class="inputHeader">
+					<div class="inputBox">
+						<input type="text" placeholder="搜应用、实验室、设备" id="search">
+						<span class="downBtn down"></span>
+					</div>
+					<div class="searchBtn"></div>
+				</div>
+				<div class="inputList"></div>     
+				<script type="text/html" id="listLevel01_script">
+					<ul>
+					{{each school as value i}}
+					<li class="list" data-buildingid={{value.buildingId}}>
+						<div class="listIcon"></div>
+						<div class="listmain">
+							<div class="listTitle">{{value.title}}</div>
+							<div class="listDesc">{{value.desc}}</div>
+						</div>
+					</li>
+					{{/each}}
+					</ul>
+				</script> 
+				<script type="text/html" id="listLevel02_script">
+					<ul>
+						<li class="sublist" data-buildingid={{buildingId}}>
+							<div class="listTitle">{{title}}</div>
+							<div class="listDesc">{{descDetail}}</div>
+						</li>
+						{{each floor as value i}}
+						<li class="sublist" data-buildingid={{buildingId}} data-floorid={{value.floorId}}>
+							<div class="listIcon"></div>
+							<div class="listmain">
+								<div class="listTitle">{{value.title}}</div>
+								<div class="listDesc">{{value.desc}}</div>
+							</div>
+						</li>
+						{{/each}}
+					</ul>
+				</script>                  
+			</div>
+			<div class="dingwei">
+				<span class="listIcon" data-buildingid=3></span>
+				<span class="listIcon" data-buildingid=2></span>
+				<span class="listIcon" data-buildingid=1></span>
+				<span class="listIcon" data-buildingid=4><a class="replaceUrl" href=":8080/sports/cdyy.html" style="display:block;height:100%;width:100%;"></a></span>
+				<span class="listIcon homeIcon"></span>
+				<span class="listIcon map-add"></span>
+				<span class="listIcon map-down"></span>
+			</div>
+		</section>
+
+
+		<section id="map02" style="display:none;">
+			<div class="mapInput">
+				<div class="inputHeader">
+					<div class="inputBox">
+						<input type="text" placeholder="搜应用、实验室、设备" id="search">
+						<span class="downBtn down"></span>
+					</div>
+					<div class="searchBtn"></div>
+				</div>
+				<div class="map02inputList"></div>     
+				<script type="text/html" id="listLevel03_script">
+					<div class="map02head">
+						<div class="listTitle">{{title}}</div>
+						<div class="listDesc">{{desc}}</div>
+					</div>
+					<ul class="tabHead">
+						{{each areaName as value i}}
+						<li data-areaid={{value.areaId}}>{{value.name}}</li>
+						{{/each}}
+					</ul>
+					<ul class="tabBody">
+						{{each area as value i}}
+						{{if i==0}}
+						<li class="sublist current">
+						{{/if}}
+						{{if i!=0}}
+						<li class="sublist">
+						{{/if}}
+							<ul>
+								{{each value.areaA as newValue j}}
+								<li class="classList" data-classid={{newValue.id}} data-class="{{newValue.class}}" data-classJson="{{newValue.classJson}}">
+									<span class="listIcon"></span>
+									<span>{{newValue.title}}</span>
+								</li>
+								{{/each}}
+							</ul>
+						</li>
+						{{/each}}
+					</ul>
+					<div class="row otherLink">
+						<div class="col-md-12">
+							<div class="otherLinkBtn"></div>
+						</div>
+						{{each sistem as value i}}
+						<div class="col-md-6" data-sistemid={{value.sistemId}}><span><a href={{value.url}}>{{value.title}}</a></span></div>
+						{{/each}}
+					</div>
+				</script>                  
+			</div>
+			<div class="areaMap">
+				<div class="mapMain current">
+					<span class="dingweiBox"></span>
+				</div>
+				<div class="mapA">
+					<span class="dingweiBox"></span>
+				</div>
+				<div class="mapB">
+					<span class="dingweiBox"></span>
+				</div>
+				<div class="mapC">
+					<span class="dingweiBox"></span>
+				</div>
+			</div>
+			<div class="dingwei">
+				<span class="listIcon homeIcon"></span>
+				<span class="listIcon map-add"></span>
+				<span class="listIcon map-down"></span>
+			</div>
+		</section>
+	</div>
+
+	<div id="labDetail">
+		<div class="labDetailHeader">
+			<h3>B207-小角X射线实验室</h3>
+			<p>实验室简介...</p>
+			<span class="labCloseBtn">X</span>
+		</div>
+		<div class="row labDetailTab">
+			<div class="col-md-6 current">实验室简介</div>
+			<div class="col-md-6">设备</div>
+		</div>
+		<div class="labTabBody">
+			<div class="labList current">
+				<h5><span class="labListIcon">实</span>实验室简介</h5>
+				<p>X小角射线实验室位于东华大学松江校区五号学院楼材料学院内，一种区别于X射线大角（2θ从5 ～165 ）衍射的结构分析方法。利用X射线照射样品，相应的散射角2θ小（5 ～7 ），即为X射线小角散射。用于分析特大晶胞物质的结构分析以及测定粒度在几十个纳米以下超细粉末粒子（或固体物质中的超细空穴）的大小、形状及分布。对于高分子材料，可测量高分子粒子或空隙大小和形状、共混的高聚物相结构分析、长周期、支链度、分子链长度的分析及玻璃化转变温度的测量。</p>
+				<div class="labImg"><img src="images/labB207.png"></div>
+				<div class="row labOtherLink">
+					<div class="col-md-4"><span>实验室<br>使用状态</span></div>
+					<div class="col-md-4"><span>实验室<br>预约</span></div>
+					<div class="col-md-4"><span>实验室<br>统计报表</span></div>
+				</div>
+			</div>
+			<div class="labList">
+				<ul>
+					<li>
+						<h5><span class="labListIcon">设</span>X小角射线仪器</h5>
+						<p>一种区别于X射线大角（2θ从5 ～165 ）衍射的结构分析方法。利用X射线照射样品，相应的散射角2θ小（5 ～7 ），即为X射线小角散射。用于分析特大晶胞物质的结构分析以及测定粒度在几十个纳米以下超细粉末粒子（或固体物质中的超细空穴）的大小、形状及分布。对于高分子材料，可测量高分子粒子或空隙大小和形状、共混的高聚物相结构分析、长周期、支链度、分子链长度的分析及玻璃化转变温度的测量...</p>
+						<div class="labImg"><img src="images/labB207.png"></div>
+						<div class="row labOtherLink">
+							<div class="col-md-4"><span>仪器<br>状态</span></div>
+							<div class="col-md-4"><span>仪器<br>预约</span></div>
+							<div class="col-md-4"><span>仪器<br>知识库</span></div>
+						</div>
+					</li>
+					<li>
+						<h5><span class="labListIcon">设</span>X小角射线仪器</h5>
+						<p>一种区别于X射线大角（2θ从5 ～165 ）衍射的结构分析方法。利用X射线照射样品，相应的散射角2θ小（5 ～7 ），即为X射线小角散射。用于分析特大晶胞物质的结构分析以及测定粒度在几十个纳米以下超细粉末粒子（或固体物质中的超细空穴）的大小、形状及分布。对于高分子材料，可测量高分子粒子或空隙大小和形状、共混的高聚物相结构分析、长周期、支链度、分子链长度的分析及玻璃化转变温度的测量...</p>
+						<div class="labImg"><img src="images/labB207.png"></div>
+						<div class="row labOtherLink">
+							<div class="col-md-4"><span>仪器<br>状态</span></div>
+							<div class="col-md-4"><span>仪器<br>预约</span></div>
+							<div class="col-md-4"><span>仪器<br>知识库</span></div>
+						</div>
+					</li>
+					<li>
+						<h5><span class="labListIcon">设</span>X小角射线仪器</h5>
+						<p>一种区别于X射线大角（2θ从5 ～165 ）衍射的结构分析方法。利用X射线照射样品，相应的散射角2θ小（5 ～7 ），即为X射线小角散射。用于分析特大晶胞物质的结构分析以及测定粒度在几十个纳米以下超细粉末粒子（或固体物质中的超细空穴）的大小、形状及分布。对于高分子材料，可测量高分子粒子或空隙大小和形状、共混的高聚物相结构分析、长周期、支链度、分子链长度的分析及玻璃化转变温度的测量...</p>
+						<div class="labImg"><img src="images/labB207.png"></div>
+						<div class="row labOtherLink">
+							<div class="col-md-4"><span>仪器<br>状态</span></div>
+							<div class="col-md-4"><span>仪器<br>预约</span></div>
+							<div class="col-md-4"><span>仪器<br>知识库</span></div>
+						</div>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<div class="window-mask"></div>
+
+	<div id="login">
+		<div class="loginContext">
+			<div class="header">账户登录</div>
+			<div class="user">
+				<input type="text" placeholder="用户名" name="">
+			</div>
+			<div class="password">
+				<input type="password" placeholder="密码" name="">
+			</div>
+			<div class="remember">
+				<label><input type="checkbox" name="">记住我</label>
+			</div>
+			<div class="login">登录</div>
+			<div class="forgive"><a href="javascript:void(0);">忘记密码？</a></div>	
+		</div>
+		<span class="closeBtn"></span>
+	</div>
+	<div class="window-mask"></div>
+
+	<!-- <div id="J_GotoTop" class="elevator">
+    	<div>
+    		<a href="#" class="elevator-top no-goto" title="返回顶部" id="backTop"></a>
+    		<a href="#" class="elevator-link" title="分享链接" id="elevator-link"></a>
+    	</div>
+	</div> -->
+	
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-footer footer-1">
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#"><img src="images/logo-big.png" /></a>
+								<p>实验室及大型仪器设备共享平台</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-2">
+						<div class="heading"><h4>新闻中心</h4></div>
+						<div class="content">
+							<p><a href="#">要闻</a></p>
+							<p><a href="#">图集</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-3">
+						<div class="heading"><h4>在线预约</h4></div>
+						<div class="content">
+							<p><a href="#">实验室预约</a></p>
+							<p><a href="#">仪器预约</a></p>
+							<p><a href="#">培训预约</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-4">
+						<div class="heading"><h4>在线培训</h4></div>
+						<div class="content">
+							<p><a href="#">知识地图</a></p>
+							<p><a href="#">微课平台</a></p>
+							<p><a href="#">微课制作</a></p>
+							<p><a href="#">教学互动平台</a></p>
+							<p><a href="#">实验支架</a></p>
+							<p><a href="#">题库与在线测试</a></p>
+							<p><a href="#">成绩册</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-5">
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#">
+									<img src="images/QRcode.png" />
+									<br>
+									<span>平台App下载</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<p>&copy; Copyright 2016 东华大学 - All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/classie.js"></script>
+	<!-- <script src="js/cbpAnimatedHeader.js"></script> -->
+	<script src="js/template.js"></script>
+
+	<script src="js/common.js"></script>
+	<script src="js/map.js"></script>
+
+
+</body>
+</html>

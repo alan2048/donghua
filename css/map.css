@@ -1,0 +1,915 @@
+header{
+    position: relative;
+}nav .navbar-header a.navbar-brand span{
+	background: url(../images/logo-001.png) no-repeat center center;
+	display: inline-block;
+	width: 150px;
+	height: 48px;
+	margin-right: 160px;
+}
+nav .nav-bg{
+	position: absolute;
+	margin-top: 15px;
+	width: 600px;
+	height: 215px;
+	padding: 22px 36px;
+	left: 0;
+	display: none;
+}
+nav .nav-bg.current{
+	display: block;
+}
+.navbar-default .navbar-nav.navbar-left > li > a i{
+	margin-left: 8px;
+	vertical-align: top;
+	line-height: 16px;
+}
+nav .nav-bg >ul >li{
+	width: 225px;
+	height: 32px;
+	line-height: 32px;
+	color: #d5e3ea;
+	border-bottom: 1px solid #3881a5;
+	text-indent: 20px;
+	left: -15px;
+}
+nav .nav-bg-01{
+	background: rgba(71,131,160,0.9) url(../images/nav-bg-01.png) no-repeat 100% center;
+}
+nav .nav-bg-02{
+	background: rgba(71,131,160,0.9) url(../images/nav-bg-02.png) no-repeat 100% center;
+}
+nav .nav-bg-03{
+	background: rgba(71,131,160,0.9) url(../images/nav-bg-03.png) no-repeat 100% center;
+}
+.container {
+	width: 1600px;
+}
+nav .navbar-collapse > ul.nav.navbar-left >li{
+	box-sizing: content-box;
+	padding: 0 15px;
+	height: 65px;
+}
+nav .navbar-collapse > ul.nav.navbar-left >li:hover{
+	background-color: #316f8c;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+nav .navbar-collapse > ul.nav.navbar-left >li:nth-of-type(2) >a {
+	background: none;
+	padding-left: 15px;
+}
+.navbar-default {
+	border-color: transparent;
+	background-color: #357797;
+}
+.navbar-default {
+	padding: 10px 0 0px 0;
+	height: 75px;
+}
+.navbar-brand {
+	float: left;
+	height: 50px;
+	padding: 0px; 
+	font-size: 18px;
+	line-height: 20px;
+}
+.navbar-default.navbar-shrink {
+	padding: 0;
+	background-color: #357797;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+	background: url(../images/bg-1.png) no-repeat center center;
+	height: 1180px;
+	width: 100%;
+}
+header #header-fixed{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 0;
+}
+section#map01 {
+	height: 990px;
+	width: 100%;
+	background: url(../images/bg-mapBase.png) no-repeat center center;
+	z-index: 100;
+	position: relative;
+}
+#page-content.index-page {
+	margin-top: 75px;
+}
+section#map01 .mapInput {
+	padding: 30px 0 0 30px;
+	position: relative;
+	z-index: 99;
+	display: inline-block;
+}
+section#map01 .mapInput .inputBox {
+	display: inline-block;
+	font-size: 0;
+	-webkit-text-size-adjust: none;
+	width: 370px;
+	height: 50px;
+	background-color: rgba(245,245,245,0.8);
+	line-height: 80px;
+	margin-right: -5px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 10px 10px;
+	position: relative;
+}
+section#map01 .mapInput .searchBtn{
+	display: inline-block;
+	width: 70px;
+	height: 50px;
+	background:url(../images/search-1.png) no-repeat center center;
+	background-color: #196ede;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+}
+section#map01 .mapInput .inputBox input {
+	border: none;
+	color: #4B4B4B;
+	font-size: 20px;
+	height: 30px;
+	line-height: 62px;
+	vertical-align: top;
+	background-color: transparent;
+	width: 320px;
+}
+section#map01 .mapInput .inputBox .downBtn {
+	display: inline-block;
+	width: 28px;
+	height: 30px;
+	background: url(../images/upBtn.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+}
+section#map01 .mapInput .inputBox .downBtn.down{
+	background: url(../images/downBtn.png) no-repeat center center;
+}
+section#map01 .inputList{
+	margin-top: 8px;
+	width: 370px;
+	position: relative;
+	display: none;
+}
+section#map01 .inputList li.list{
+	width: 370px;
+	height: 100px;
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px;
+	text-align: left;
+	border-bottom: 1px solid #c2cac7;
+	cursor: pointer;
+}
+section#map01 .inputList li.list:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+section#map01 .inputList li.list:first-of-type{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+section#map01 .inputList li.list:last-of-type{
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom: none;
+}
+section#map01 .inputList li.list div.listIcon {
+	display: inline-block;
+	width: 28px;
+	height: 60px;
+	float: left;
+	background: url(../images/dingwei.png) no-repeat center center;
+}
+section#map01 .inputList li.list div.listIcon.current{
+	background: url(../images/dingwei-h.png) no-repeat center center;	
+}
+section#map01 .inputList li.list div.listmain{
+	float: left;
+	margin-left: 12px;
+	margin-top: 8px;
+}
+section#map01 .inputList li.list div.listmain .listTitle{
+	font-size: 16px;
+	color: #676767;
+	line-height: 1.5;
+}
+section#map01 .inputList li.list div.listmain .listDesc{
+	font-size: 16px;
+	color: #999;
+	line-height: 1.5;
+}
+section#map01 .dingwei {
+	position: absolute;
+	height: 990px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+section#map01 .dingwei .listIcon{
+	display: inline-block;
+	width: 28px;
+	height: 60px;
+	background: url(../images/dingwei.png) no-repeat center center;
+	position: relative;
+	cursor: pointer;
+}
+section#map01 .dingwei .listIcon.homeIcon {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/homeIcon.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+	right: 40px;
+	top: 40px;
+}
+section#map01 .dingwei .listIcon.map-add {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/map-add.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+	right: 40px;
+	bottom: 100px;
+}
+section#map01 .dingwei .listIcon.map-down {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/map-down.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+	right: 40px;
+	bottom: 50px;
+}
+section#map01 .dingwei .listIcon:hover{
+	background: url(../images/dingwei-h.png) no-repeat center center;
+}
+section#map01 .dingwei .listIcon.homeIcon:hover{
+	background: url(../images/homeIcon.png) no-repeat center center;
+}
+section#map01 .dingwei .listIcon.map-down:hover{
+	background: url(../images/map-down.png) no-repeat center center;
+}
+section#map01 .dingwei .listIcon.map-add:hover{
+	background: url(../images/map-add.png) no-repeat center center;
+}
+section#map01 .dingwei .listIcon.current{
+	background: url(../images/dingwei-h.png) no-repeat center center;
+}
+section#map01 .dingwei .listIcon:nth-of-type(1) {
+	top: 90px;
+	left: 1265px;
+}
+section#map01 .dingwei .listIcon:nth-of-type(2) {
+	top: 194px;
+	left: 1194px;
+}
+section#map01 .dingwei .listIcon:nth-of-type(3) {
+	top: 180px;
+	left: 960px;
+}
+section#map01 .dingwei .listIcon:nth-of-type(4) {
+	top: 832px;
+	left: 340px;
+}
+section#map01 .inputList li.sublist {
+	width: 370px;
+	height: 100px;
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px;
+	text-align: left;
+	border-bottom: 1px solid #c2cac7;
+	cursor: pointer;
+}
+section#map01 .inputList li.sublist:first-of-type {
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	height: 110px;
+	background-color: #196edd;
+}
+section#map01 .inputList li.sublist:first-of-type:hover {
+	background-color: #196edd;
+}
+section#map01 .inputList li.sublist:first-of-type .listTitle {
+	color: #fff;
+	font-size: 26px;
+	line-height: 40px;
+}
+section#map01 .inputList li.sublist:first-of-type .listDesc {
+	color: #fff;
+	font-size: 20px;
+	line-height: 34px;
+}
+section#map01 .inputList li.sublist div.listIcon {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	float: left;
+	border-radius: 15px;
+	background-color: #196edd;
+	margin-top: 14px;
+}
+section#map01 .inputList li.sublist div.listIcon.current{
+	background-color: #db3232;	
+}
+section#map01 .inputList li.sublist div.listmain {
+	float: left;
+	margin-left: 12px;
+	margin-top: 8px;
+}
+section#map01 .inputList li.sublist:last-of-type {
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom: none;
+}
+section#map01 .inputList li.sublist:hover {
+	background-color: rgba(255,255,255,0.5);
+}
+section#map01 .inputList li.sublist div.listmain .listTitle {
+	font-size: 16px;
+	color: #676767;
+	line-height: 1.5;
+}
+section#map01 .inputList li.sublist div.listmain .listDesc {
+	font-size: 16px;
+	color: #999;
+	line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section#map02 {
+	height: 990px;
+	width: 100%;
+	background: url(../images/map02base.png) no-repeat center center;
+	z-index: 100;
+	position: relative;
+	color: #fff;
+}
+section#map02 .mapInput {
+	padding: 30px 0 0 30px;
+	position: relative;
+	z-index: 101;
+	display: inline-block;
+}
+section#map02 .mapInput .inputBox {
+	display: inline-block;
+	font-size: 0;
+	-webkit-text-size-adjust: none;
+	width: 370px;
+	height: 50px;
+	background-color: rgba(55,59,61,0.8);
+	line-height: 80px;
+	margin-right: -5px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 10px 10px;
+	position: relative;
+}
+section#map02 .mapInput .searchBtn {
+	display: inline-block;
+	width: 70px;
+	height: 50px;
+	background: url(../images/search-1.png) no-repeat center center;
+	background-color: #414444;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	cursor: pointer;
+}
+section#map02 .mapInput .inputBox input {
+	border: none;
+	color: #676767;
+	font-size: 20px;
+	height: 30px;
+	line-height: 62px;
+	vertical-align: top;
+	background-color: transparent;
+	width: 320px;
+}
+section#map02 .mapInput .inputBox .downBtn {
+	display: inline-block;
+	width: 28px;
+	height: 30px;
+	background: url(../images/upBtn01.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+}
+section#map02 .mapInput .inputBox .downBtn.down{
+	background: url(../images/downBtn01.png) no-repeat center center;
+}
+section#map02 .inputList{
+	margin-top: 8px;
+	width: 370px;
+	position: relative;
+	display: none;
+}
+section#map02 .inputList li.list{
+	width: 370px;
+	height: 100px;
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px;
+	text-align: left;
+	border-bottom: 1px solid #c2cac7;
+	cursor: pointer;
+}
+section#map02 .inputList li.list:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+section#map02 .inputList li.list:first-of-type{
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+section#map02 .inputList li.list:last-of-type{
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom: none;
+}
+section#map02 .inputList li.list div.listIcon {
+	display: inline-block;
+	width: 28px;
+	height: 60px;
+	float: left;
+	background: url(../images/dingwei.png) no-repeat center center;
+}
+section#map02 .inputList li.list div.listIcon.current{
+	background: url(../images/dingwei-h.png) no-repeat center center;	
+}
+section#map02 .inputList li.list div.listmain{
+	float: left;
+	margin-left: 12px;
+	margin-top: 8px;
+}
+section#map02 .inputList li.list div.listmain .listTitle{
+	font-size: 16px;
+	color: #676767;
+	line-height: 1.5;
+}
+section#map02 .inputList li.list div.listmain .listDesc{
+	font-size: 16px;
+	color: #999;
+	line-height: 1.5;
+}
+section#map02 .dingwei {
+	position: absolute;
+	height: 990px;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+section#map02 .dingwei .listIcon{
+	display: inline-block;
+	width: 28px;
+	height: 60px;
+	background: url(../images/dingwei.png) no-repeat center center;
+	position: relative;
+	cursor: pointer;
+}
+section#map02 .dingwei .listIcon.homeIcon {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/homeIcon.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+	right: 40px;
+	top: 40px;
+	z-index: 99999;
+}
+section#map02 .dingwei .listIcon.map-add {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/map-add01.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+	right: 40px;
+	bottom: 100px;
+}
+section#map02 .dingwei .listIcon.map-down {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background: url(../images/map-down01.png) no-repeat center center;
+	position: absolute;
+	cursor: pointer;
+	right: 40px;
+	bottom: 50px;
+}
+section#map02 .dingwei .listIcon:hover{
+	background: url(../images/dingwei-h.png) no-repeat center center;
+}
+section#map02 .dingwei .listIcon.homeIcon:hover{
+	background: url(../images/homeIcon.png) no-repeat center center;
+}
+section#map02 .dingwei .listIcon.map-down:hover{
+	background: url(../images/map-down01.png) no-repeat center center;
+}
+section#map02 .dingwei .listIcon.map-add:hover{
+	background: url(../images/map-add01.png) no-repeat center center;
+}
+section#map02 .dingwei .listIcon.current{
+	background: url(../images/dingwei-h.png) no-repeat center center;
+}
+section#map02 .dingwei .listIcon:nth-of-type(1) {
+	top: 20px;
+	right: 20px;
+}
+section#map02 .dingwei .listIcon:nth-of-type(2) {
+	bottom: 80px;
+	right: 20px;
+}
+section#map02 .dingwei .listIcon:nth-of-type(3) {
+	bottom: 30px;
+	right: 20px;
+}
+section#map02 .areaMap span.dingweiBox{
+	position: absolute;
+	border: 5px solid red;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 4px #fff;
+	display: none;
+}
+section#map02 .map02inputList .map02head {
+	width: 370px;
+	height: 110px;
+	padding: 20px;
+	text-align: left;
+	border-bottom: 1px solid #2d2d2d;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	background-color: rgba(55,59,61,0.8);
+	margin-top: 5px;
+}
+section#map02 .map02inputList .map02head .listTitle{
+	color: #fff;
+	font-size: 26px;
+	line-height: 40px;
+}
+section#map02 .map02inputList .map02head .listDesc{
+	color: #fff;
+	font-size: 20px;
+	line-height: 34px;
+}
+section#map02 .map02inputList .tabHead {
+	width: 370px;
+	height: 80px;
+	text-align: center;
+	border-bottom: 1px solid #2d2d2d;
+	cursor: pointer;
+	background-color: rgba(55,59,61,0.8);
+}
+section#map02 .map02inputList .tabHead li {
+	float: left;
+	width: 123px;
+	border-right: 1px solid #2d2d2d;
+	height: 80px;
+	vertical-align: bottom;
+	line-height: 80px;
+}
+section#map02 .map02inputList .tabHead li:last-of-type{
+	border-right: none;
+}
+section#map02 .map02inputList .tabHead li:nth-of-type(1):hover{
+	background-color: #4a6544;
+}
+section#map02 .map02inputList .tabHead li:nth-of-type(2):hover{
+	background-color: #6b495a;
+}
+section#map02 .map02inputList .tabHead li:nth-of-type(3):hover{
+	background-color: #438d83;
+}
+section#map02 .map02inputList .tabHead li:nth-of-type(1).current{
+	background-color: #4a6544;
+}
+section#map02 .map02inputList .tabHead li:nth-of-type(2).current{
+	background-color: #6b495a;
+}
+section#map02 .map02inputList .tabHead li:nth-of-type(3).current{
+	background-color: #438d83;
+}
+section#map02 .map02inputList .tabBody {
+	width: 370px;
+	height: 500px;
+	text-align: left;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: rgba(55,59,61,0.8);
+	padding-top: 20px;
+	overflow-y: scroll;
+}
+section#map02 .map02inputList .tabBody .sublist{
+	display: none;
+}
+section#map02 .map02inputList .tabBody .sublist.current{
+	display: block;
+}
+section#map02 .map02inputList .otherLink {
+	width: 370px;
+	height: 170px;
+	padding: 0 10px 10px 10px;
+	text-align: left;
+	border-radius: 5px;
+	margin-top: 15px;
+	background-color: rgba(55,59,61,0.8);
+	overflow: hidden;
+	margin-left: 0px;
+}
+section#map02 .map02inputList .otherLink .otherLinkBtn{
+	height: 58px;
+	cursor: pointer;
+	background: url(../images/map-up02.png) no-repeat center center;
+}
+section#map02 .map02inputList .otherLink .otherLinkBtn.top{
+	background: url(../images/map-down02.png) no-repeat center center;
+}
+section#map02 .map02inputList .tabBody li.sublist .listIcon {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius: 15px;
+	background-color: #db3232;
+	line-height: 30px;
+	margin: 0 20px;
+}
+section#map02 .map02inputList .tabBody li.sublist .classList{
+	height: 56px;
+	line-height: 56px;
+	cursor: pointer;
+}
+section#map02 .map02inputList .tabBody li.sublist .classList:hover{
+	background-color: #464749;
+}
+section#map02 .areaMap .mapMain {
+	height: 990px;
+	background: url(../images/building05.png) no-repeat center center;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 710px;
+	width: 900px;
+	display: none;
+}
+section#map02 .areaMap .mapA {
+	height: 990px;
+	background: url(../images/map-floor2A.png) no-repeat center center;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 305px;
+	width: 1560px;
+	display: none;
+}
+section#map02 .areaMap .mapB {
+	height: 990px;
+	background: url(../images/map-floor2B.png) no-repeat center center;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 710px;
+	width: 1058px;
+	display: none;
+}
+section#map02 .areaMap .mapC {
+	height: 990px;
+	background: url(../images/map-floor2C.png) no-repeat center center;
+	z-index: 100;
+	position: absolute;
+	top: 0;
+	left: 510px;
+	width: 1300px;
+	display: none;
+}
+section#map02 .areaMap .mapMain.current,section#map02 .areaMap .mapA.current,section#map02 .areaMap .mapB.current,section#map02 .areaMap .mapC.current{
+	display: block;
+}
+section#map02 .map02inputList .otherLink .col-md-6 span{
+	height: 42px;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 12px;
+	line-height: 42px;
+	background-color: #424746;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+}
+section#map02 .map02inputList .otherLink .col-md-6 span a{
+	color: #fff;
+}
+section#map02 .map02inputList .otherLink .col-md-6 span:hover{
+	background-color: #5F605F;
+}
+section#map02 .map02inputList .otherLink .col-md-12{
+	height: 58px;
+}
+/*section#map02 span.dingweiBox{
+	display: inline-block;
+	position: absolute;
+	color: transparent;
+	border: 4px solid red;
+	box-shadow: 0 0 3px #fff;
+	display: none;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#labDetail {
+	position: fixed;
+	z-index: 9001;
+	width: 700px;
+	height: 875px;
+	top: 10%;
+	left: 33%;
+	background-color: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	 display: none; 
+}
+#labDetail .labDetailHeader{
+	position: relative;
+	height: 120px;
+	padding: 30px;
+	color: #fff;
+	background-color: #303e42;
+}
+#labDetail .labDetailHeader h3, #labDetail .labDetailHeader p {
+	color: #fff;
+	line-height: 34px;
+}
+#labDetail .labDetailHeader span.labCloseBtn {
+	position: absolute;
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	border-radius: 25px;
+	border: 1px solid #fff;
+	color: #fff;
+	line-height: 38px;
+	text-align: center;
+	font-size: 28px;
+	top: 20px;
+	right: 20px;
+	font-weight: 100;
+	cursor: pointer;
+}
+#labDetail .labDetailTab .col-md-6{
+	height: 40px;
+	background-color: #51595e;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	padding: 0;
+}
+#labDetail .labDetailTab .col-md-6:first-of-type{
+	border-right: 1px solid #fff;
+}
+#labDetail .labDetailTab .col-md-6.current{
+	background-color: #cd6b9d;
+}
+#labDetail .labTabBody .labList{
+	display: none;
+	padding: 28px 60px 22px 60px;
+}
+#labDetail .labTabBody{
+	height: 715px;
+	overflow-y: scroll;
+}
+#labDetail .labTabBody .labList:last-of-type li{
+	padding-bottom: 40px;
+	padding-top: 40px;
+	border-bottom: 1px solid #000;
+}
+#labDetail .labTabBody .labList:last-of-type li:last-of-type{
+	border-bottom: none;
+}
+#labDetail .labTabBody .labList:last-of-type li:first-of-type{
+	padding-top: 0;
+}
+#labDetail .labTabBody .labList.current{
+	display: block;
+}
+#labDetail .labTabBody .labListIcon {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 15px;
+	background-color: #cd6b9d;
+	text-align: center;
+	color: #fff;
+	margin-right: 12px;
+	font-size: 16px;
+}
+#labDetail .labTabBody .labList h5 {
+	color: #303d44;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 300;
+}
+#labDetail .labTabBody .labList p {
+	color: #676767;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: 300;
+	text-indent: 34px;
+}
+#labDetail .labTabBody .labList .labImg{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#labDetail .labTabBody .labList .labOtherLink .col-md-4{
+	text-align: center;
+}
+#labDetail .labList .labOtherLink span {
+	text-align: center;
+	height: 100px;
+	width: 100px;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	padding-top: 24px;
+	line-height: 24px;
+	cursor: pointer;
+}
+#labDetail .labList .labOtherLink >div:nth-of-type(1) span{
+	background-color: #cd6b9d;
+}
+#labDetail .labList .labOtherLink >div:nth-of-type(2) span{
+	background-color: #89ce6c;
+}
+#labDetail .labList .labOtherLink >div:nth-of-type(3) span{
+	background-color: #6acebf;
+}
+#labDetail .labList .labOtherLink >div:nth-of-type(1) span:hover{
+	background-color: #c84889;
+	box-shadow: 0 0 2px #ccc;
+}
+#labDetail .labList .labOtherLink >div:nth-of-type(2) span:hover{
+	background-color: #67b149;
+	box-shadow: 0 0 2px #ccc;
+}
+#labDetail .labList .labOtherLink >div:nth-of-type(3) span:hover{
+	background-color: #3ec8b3;
+	box-shadow: 0 0 2px #ccc;
+}

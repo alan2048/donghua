@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="实验室及大型仪器设备共享平台">
+
+    <title>东华大学实验室及大型仪器设备共享平台</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/bigData.css">
+	
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">东华大学实验室</a> -->
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+					<li>
+                        <a class="page-scroll loginBtn" href="javascript:void(0);">登录</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">
+                        	<input type="text" name="" placeholder="仪器检索">
+                        	<span><img src="images/search.png"></span>
+                        </a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#message">在线预约</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#user">个人中心</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#files">文件下载</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<header>
+		<div id="logo">
+			<div class="col-lg-12 logo">
+				<span><img src="images/logo.png"></span><br>
+				<span>实验室及大型仪器设备共享平台</span>
+			</div>
+		</div>
+		<div id="header-fixed">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4"><a class="btn btn-1 btn-sm a-msg" href="index.html"></a></div>
+					<div class="col-lg-4"><a class="btn btn-1 btn-sm a-bigData" href="bigData.html"></a></div>
+					<div class="col-lg-4"><a class="btn btn-1 btn-sm a-map" href="map.html"></a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="page-content" class="index-page">
+		<section id="carousel">
+    		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			  		<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    	<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    	<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+			    		<div class="row">
+			    			<div class="col-lg-6">
+			    				<div id="carousel-echart01"></div>
+			    			</div>
+			    			<div class="col-lg-6 echartDesc">
+			    				<h3>图表名称一</h3>
+			    				<p>图表文字介绍，图表文字介绍，图表文字介绍，图表文字介绍</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="item">
+			    		<div class="row">
+			    			<div class="col-lg-6">
+			    				<div id="carousel-echart02"></div>
+			    			</div>
+			    			<div class="col-lg-6 echartDesc">
+			    				<h3>图表名称二</h3>
+			    				<p>图表文字介绍，图表文字介绍，图表文字介绍，图表文字介绍</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="item">
+			    		<div class="row">
+			    			<div class="col-lg-6">
+			    				<div id="carousel-echartAA">
+			    					<h3>学院大型仪器来源地</h3>
+									<h5>（国内、德国、美国、其他）</h5>
+									<svg width="600" height="600"></svg>
+			    				</div>
+			    			</div>
+			    			<div class="col-lg-6 echartDesc">
+			    				<h3>图表名称三</h3>
+			    				<p>图表文字介绍，图表文字介绍，图表文字介绍，图表文字介绍</p>
+			    			</div>
+			    		</div>
+			    	</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    		<span class="glyphicon-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    		<span class="glyphicon-right"></span>
+		    	</a>
+			</div>
+		</section>
+		<section id="echart01">
+			<div class="row">
+				<div class="col-lg-6">
+					<div id="echart01-01"></div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-md-6 bg-01">
+							<h4><i>仪器</i>用电情况<span>→</span></h4>
+						</div>
+						<div class="col-md-6">
+							<div id="echart01-02"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div id="echart01-03" style="text-align: center;"></div>
+						</div>
+						<div class="col-md-6 bg-02">
+							<h2><span>←</span>设备共享</h2>
+							<p>使用分布</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="echart02">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h3>设备分布</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<div id="echart02-zhu">
+						<ul>
+							<li>高质设备学院分布</li>
+							<li>低质设备学院分布</li>
+							<li>新进设备学院分布</li>
+							<li>报废设备学院分布</li>
+							<li>设备总量学院分布</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6 echart02-desc">
+					<ul>
+						<li class="echart02-item current">
+							<h3>高质设备学院分布</h3>
+							<p>文字介绍，文字介绍，文字介绍，文字介绍，文字介绍，文字介绍</p>
+							<div class="row">
+								<div class="col-md-7">
+									<div id="echart02-00"></div>
+								</div>
+								<div class="col-md-5 echartDesc">
+									<ul>
+										<li>
+											<span class="color01">60%</span>
+											<span class="text">设备名称一</span>
+										</li>
+										<li>
+											<span class="color02">21%</span>
+											<span class="text">设备名称二</span>
+										</li>
+										<li>
+											<span class="color03">10%</span>
+											<span class="text">设备名称三</span>
+										</li>
+										<li>
+											<span class="color04">9%</span>
+											<span class="text">设备名称四</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="echart02-item">
+							<h3>低质设备学院分布</h3>
+							<p>文字介绍，文字介绍，文字介绍，文字介绍，文字介绍，文字介绍</p>
+							<div class="row">
+								<div class="col-md-7">
+									<div id="echart02-01"></div>
+								</div>
+								<div class="col-md-5 echartDesc">
+									<ul>
+										<li>
+											<span class="color01">65%</span>
+											<span class="text">设备名称一</span>
+										</li>
+										<li>
+											<span class="color02">19%</span>
+											<span class="text">设备名称二</span>
+										</li>
+										<li>
+											<span class="color03">5%</span>
+											<span class="text">设备名称三</span>
+										</li>
+										<li>
+											<span class="color04">11%</span>
+											<span class="text">设备名称四</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="echart02-item">
+							<h3>新进设备学院分布</h3>
+							<p>文字介绍，文字介绍，文字介绍，文字介绍，文字介绍，文字介绍</p>
+							<div class="row">
+								<div class="col-md-7">
+									<div id="echart02-02"></div>
+								</div>
+								<div class="col-md-5 echartDesc">
+									<ul>
+										<li>
+											<span class="color01">17%</span>
+											<span class="text">设备名称一</span>
+										</li>
+										<li>
+											<span class="color02">22%</span>
+											<span class="text">设备名称二</span>
+										</li>
+										<li>
+											<span class="color03">28%</span>
+											<span class="text">设备名称三</span>
+										</li>
+										<li>
+											<span class="color04">33%</span>
+											<span class="text">设备名称四</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="echart02-item">
+							<h3>报废设备学院分布</h3>
+							<p>文字介绍，文字介绍，文字介绍，文字介绍，文字介绍，文字介绍</p>
+							<div class="row">
+								<div class="col-md-7">
+									<div id="echart02-03"></div>
+								</div>
+								<div class="col-md-5 echartDesc">
+									<ul>
+										<li>
+											<span class="color01">12%</span>
+											<span class="text">设备名称一</span>
+										</li>
+										<li>
+											<span class="color02">31%</span>
+											<span class="text">设备名称二</span>
+										</li>
+										<li>
+											<span class="color03">38%</span>
+											<span class="text">设备名称三</span>
+										</li>
+										<li>
+											<span class="color04">19%</span>
+											<span class="text">设备名称四</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="echart02-item">
+							<h3>设备总量学院分布</h3>
+							<p>文字介绍，文字介绍，文字介绍，文字介绍，文字介绍，文字介绍</p>
+							<div class="row">
+								<div class="col-md-7">
+									<div id="echart02-04"></div>
+								</div>
+								<div class="col-md-5 echartDesc">
+									<ul>
+										<li>
+											<span class="color01">20%</span>
+											<span class="text">设备名称一</span>
+										</li>
+										<li>
+											<span class="color02">7%</span>
+											<span class="text">设备名称二</span>
+										</li>
+										<li>
+											<span class="color03">26%</span>
+											<span class="text">设备名称三</span>
+										</li>
+										<li>
+											<span class="color04">47%</span>
+											<span class="text">设备名称四</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="echart03">
+			<div class="row">
+				<div class="col-lg-6">
+					<h4 class="echart03-desc01">场地使用次数</h4>
+				</div>
+				<div class="col-lg-6 echart03-01">
+					<div id="echart03-01"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 echart03-02">
+					<div id="echart03-02"></div>
+				</div>
+				<div class="col-lg-6 echart03-desc">
+					<h4 class="echart03-desc02">社团活动次数</h4>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div id="login">
+		<div class="loginContext">
+			<div class="header">账户登录</div>
+			<div class="user">
+				<input type="text" placeholder="用户名" name="">
+			</div>
+			<div class="password">
+				<input type="text" placeholder="密码" name="">
+			</div>
+			<div class="remember">
+				<label><input type="checkbox" name="">记住我</label>
+			</div>
+			<div class="login">登录</div>
+			<div class="forgive"><a href="javascript:void(0);">忘记密码？</a></div>	
+		</div>
+		<span class="closeBtn"></span>
+	</div>
+	<div class="window-mask"></div>
+
+	<!-- <div id="J_GotoTop" class="elevator">
+    	<div>
+    		<a href="#" class="elevator-top no-goto" title="返回顶部" id="backTop"></a>
+    		<a href="#" class="elevator-link" title="分享链接" id="elevator-link"></a>
+    	</div>
+	</div> -->
+	
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-footer footer-1">
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#"><img src="images/logo-big.png" /></a>
+								<p>实验室及大型仪器设备共享平台</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-2">
+						<div class="heading"><h4>新闻中心</h4></div>
+						<div class="content">
+							<p><a href="#">要闻</a></p>
+							<p><a href="#">图集</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-3">
+						<div class="heading"><h4>在线预约</h4></div>
+						<div class="content">
+							<p><a href="#">实验室预约</a></p>
+							<p><a href="#">仪器预约</a></p>
+							<p><a href="#">培训预约</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-4">
+						<div class="heading"><h4>在线培训</h4></div>
+						<div class="content">
+							<p><a href="#">知识地图</a></p>
+							<p><a href="#">微课平台</a></p>
+							<p><a href="#">微课制作</a></p>
+							<p><a href="#">教学互动平台</a></p>
+							<p><a href="#">实验支架</a></p>
+							<p><a href="#">题库与在线测试</a></p>
+							<p><a href="#">成绩册</a></p>
+						</div>
+					</div>
+					<div class="col-md-2 col-footer footer-5">
+						<div class="row">
+							<div class="col-md-12">
+								<a href="#">
+									<img src="images/QRcode.png" />
+									<br>
+									<span>平台App下载</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<p>&copy; Copyright 2016 东华大学 - All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+	<script src="js/jquery-2.1.1.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/echarts.js"></script><!-- 完整echart -->
+	<!-- <script src="js/echarts.min.js"></script> --><!-- 压缩完整版本 -->
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+	<script src="js/d3.min.js"></script>
+<script>
+
+
+var root=  {
+ "name": "flare",
+ "children": [
+ 
+  {
+   "name": "中国",
+   "lev": "1",
+   "children": [
+    {"name": "材料学院", "size": 2600},
+    {"name": "服装学院", "size": 1600},
+    {"name": "化工学院", "size": 600},
+    {"name": "机械学院", "size": 1600} ,
+    {"name": "信息学院", "size": 600},
+    {"name": "计算机学院", "size": 1600} ,
+    {"name": "国家级重点实验室", "size": 600},
+    {"name": "环境学院", "size": 100}
+   ]
+  },
+  {
+   "name": "德国",
+   "lev": "1",
+   "children": [
+    {"name": "材料学院", "size": 200},
+    {"name": "服装学院", "size": 110},
+    {"name": "化工学院", "size": 10},
+    {"name": "机械学院", "size": 800} ,
+    {"name": "信息学院", "size": 600}, 
+    {"name": "环境学院", "size": 100}
+   ]
+  },
+  {
+   "name": "美国",
+   "lev": "1",
+   "children": [
+       {"name": "材料学院", "size": 300},
+    {"name": "服装学院", "size": 500},
+    {"name": "化工学院", "size": 600},
+    {"name": "机械学院", "size": 700} ,
+    {"name": "信息学院", "size": 100},
+    {"name": "计算机学院", "size": 500} ,
+    {"name": "国家级重点实验室", "size": 100},
+    {"name": "环境学院", "size": 100}
+   ]
+  } 
+   ,
+  {
+   "name": "其他",
+   "lev": "1",
+   "children": [
+    {"name": "材料学院", "size": 20},
+    {"name": "服装学院", "size": 160},
+    {"name": "化工学院", "size": 60},
+    {"name": "机械学院", "size": 100} ,
+    {"name": "信息学院", "size": 100},
+    {"name": "计算机学院", "size": 160} ,
+    {"name": "国家级重点实验室", "size": 600},
+    {"name": "环境学院", "size": 100}
+   ]
+  } 
+   
+ ]
+}
+
+
+
+
+
+var svg = d3.select("svg"),
+    diameter = +svg.attr("width"),
+    g = svg.append("g").attr("transform", "translate(2,2)"),
+    format = d3.format(",d");
+
+var pack = d3.pack()
+    .size([diameter - 4, diameter - 4]);
+
+//d3.json("donghua.json", function(error, root) {
+   
+
+  root = d3.hierarchy(root)
+      .sum(function(d) { return d.size; })
+      .sort(function(a, b) { return b.value - a.value; });
+
+  var node = g.selectAll(".node")
+    .data(pack(root).descendants())
+    .enter().append("g")
+      .attr("class", 
+	  function(d) { 
+	    if(d.depth==1) return "one node" ;
+	    return d.children ? "node" : "leaf node"; 
+	  
+	  })
+      .attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+
+  node.append("title")
+      .text(function(d) { return d.data.name + "\n" + format(d.value); });
+
+  node.append("circle")
+      .attr("r", function(d) { return d.r; });
+
+  node.filter(function(d) { return !d.children; }).append("text")
+      .attr("dy", "0.3em")
+      .text(function(d) { return d.data.name.substring(0, d.r / 3); });
+//});
+
+</script>
+	<script src="js/d3.v3.min.js"></script>
+		<script>
+		
+		//1.定义数据
+		// 城市名
+		var city_name = [ "材料学院" , "纺织学院" , "服装学院" , "化工学院" , "信息学院" , "理学院" ];
+		
+		// 城市人口的来源，如
+		//				北京		上海
+		//	北京		1000		3045
+		//	上海		3214		2000
+ 
+		var population = [
+		  [ 20000,  3045　 , 4567　, 1234 , 3714 , 31],
+		  [ 3214,  0 , 2060　, 124  , 3234 , 31],
+		  [ 8761,  6545　 , 0, 8045 , 647  , 31],
+		  [ 3211,  1067  , 3214 , 0  , 1006 , 31],
+		  [ 2146,  1034　 , 6745 , 4764  , 0, 31 ] ,
+		  [ 310,  310 , 310 , 310  , 310, 310 ]
+		];
+
+		//2.转换数据，并输出转换后的数据
+		var chord_layout = d3.layout.chord()
+			                 .padding(0.03)		//节点之间的间隔
+			                 .sortSubgroups(d3.descending)	//排序
+			                 .matrix(population);	//输入矩阵
+
+		var groups = chord_layout.groups();
+		var chords = chord_layout.chords();
+
+		console.log( groups );
+		console.log( chords );
+		
+		//3.SVG，弦图，颜色函数的定义
+		var width  = 400;
+		var height = 400;
+		var innerRadius = width/2 * 0.7;
+		var outerRadius = innerRadius * 1.1;
+
+		var color20 = d3.scale.category20();
+
+		var box=document.getElementById('echart01-03');
+		var svg = d3.select(box).append("svg")
+			.attr("width", width)
+			.attr("height", height)
+		    .append("g")
+			.attr("transform", "translate(" + width/2 + "," + height/2 + ")");
+
+		//4.绘制节点（即分组，有多少个城市画多少个弧形），及绘制城市名称
+		var outer_arc =  d3.svg.arc()
+					 .innerRadius(innerRadius)
+					 .outerRadius(outerRadius);
+		
+		var g_outer = svg.append("g");
+		
+		g_outer.selectAll("path")
+				.data(groups)
+				.enter()
+				.append("path")
+				.style("fill", function(d) { return color20(d.index); })
+				.style("stroke", function(d) { return color20(d.index); })
+				.attr("d", outer_arc );
+			
+		g_outer.selectAll("text")
+				.data(groups)
+				.enter()
+				.append("text")
+				.each( function(d,i) { 
+					d.angle = (d.startAngle + d.endAngle) / 2; 
+					d.name = city_name[i];
+				})
+				.attr("dy",".35em")
+				.attr("transform", function(d){
+					return "rotate(" + ( d.angle * 180 / Math.PI ) + ")" +
+						   "translate(0,"+ -1.0*(outerRadius+10) +")" +
+						    ( ( d.angle > Math.PI*3/4 && d.angle < Math.PI*5/4 ) ? "rotate(180)" : "");
+				})
+				.text(function(d){
+					return d.name;
+				});
+				
+
+		//5.绘制内部弦（即所有城市人口的来源，即有5*5=25条弧）
+		var inner_chord =  d3.svg.chord()
+						.radius(innerRadius);
+		
+		svg.append("g")
+			.attr("class", "chord")
+		    .selectAll("path")
+			.data(chords)
+		    .enter()
+			.append("path")
+			.attr("d", inner_chord )
+		    .style("fill", function(d) { return color20(d.source.index); })
+			.style("opacity", 1)
+			.on("mouseover",function(d,i){
+				d3.select(this)
+					.style("fill","yellow");
+			})
+			.on("mouseout",function(d,i) { 
+				d3.select(this)
+					.transition()
+                    .duration(1000)
+					.style("fill",color20(d.source.index));
+			});
+
+		</script>
+
+	<script src="js/common.js"></script>
+	<script src="js/bigData.js"></script>
+
+
+</body>
+</html>
